@@ -5,6 +5,7 @@ log/*.pid
 log/call_*
 db/*.bkp
 db/*.bak
+db/*.sqlite3
 *.swp
 index/**/*
 config/database.yml
