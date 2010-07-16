@@ -9,7 +9,7 @@ gem "mongrel", ">=1.1.5"
 gem "rails", "=2.3.8", :require => nil
 gem "rake", ">=0.8.7"
 gem "rubyforge", ">=2.0.3"
-gem "sqlite3-ruby", "1.2.1"
+gem "sqlite3-ruby", "1.3.1"
 
 group :test do
   # bundler requires the following gems while running tests
