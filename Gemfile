@@ -4,6 +4,7 @@ source :gemcutter
 # Define a bundler group for a default rails install
 gem "bundler"
 gem "factory_girl", ">=1.2.3"
+gem "haml"
 gem "thin", ">=1.2.7"
 gem "mongrel", ">=1.1.5"
 gem "rails", "=2.3.8", :require => nil
