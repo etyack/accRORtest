@@ -31,3 +31,5 @@ a {
     a.negative:hover {
       background: #cd2c2c;
       border: 1px solid #ab0a0a; }
+  a.breadcrumb {
+    font-size: 1.2em; }

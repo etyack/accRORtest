@@ -14,3 +14,8 @@ Feature: Gadget Detail
     Scenario: User views gadget weight
       Given I am viewing the gadget detail page for "The Atrocious Condor Waffler"
       Then I should see that "The Atrocious Condor Waffler" weighs 900 ounces
+
+    Scenario: User goes back to the gadget overview
+      Given I am viewing the gadget detail page for "The Atrocious Condor Waffler"
+      When I follow "Back to Gadget Overview"
+      Then I should be on the gadget overview page
