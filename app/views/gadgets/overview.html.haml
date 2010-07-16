@@ -9,9 +9,9 @@
   %tbody
     - @gadgets.each do |g|
       %tr{:class => cycle("odd", "even")}
-        %td= g.name
-        %td= g.description
-        %td= g.complete_weight
+        %td.twenty= g.name
+        %td.sixty= g.description
+        %td.twenty= g.complete_weight
   %tfoot
     %tr
       %th Name

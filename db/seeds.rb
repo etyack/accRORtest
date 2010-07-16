@@ -9,4 +9,8 @@
 require 'factory_girl'
 require 'faker'
 
-25.times { Factory :gadget }
+Gadget.destroy_all
+25.times do
+  g = Factory :gadget
+  puts "Created gadget \"#{g.name}\""
+end

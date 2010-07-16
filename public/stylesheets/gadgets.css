@@ -15,6 +15,42 @@ table.index {
   table.index tbody td {
     padding: 3px 6px;
     font-size: 1.2em; }
+    table.index tbody td.full, table.index tbody td.whole, table.index tbody td.hundred, table.index tbody td.one_hundred {
+      width: 100%; }
+    table.index tbody td.ninety {
+      width: 90%; }
+    table.index tbody td.eighty {
+      width: 80%; }
+    table.index tbody td.three_quarters {
+      width: 75%; }
+    table.index tbody td.seventy {
+      width: 70%; }
+    table.index tbody td.two_thirds {
+      width: 66%; }
+    table.index tbody td.golden_ratio_greater {
+      width: 61.8%; }
+    table.index tbody td.sixty {
+      width: 60%; }
+    table.index tbody td.half, table.index tbody td.one_half, table.index tbody td.fifty {
+      width: 50%; }
+    table.index tbody td.forty {
+      width: 40%; }
+    table.index tbody td.golden_ratio_lesser {
+      width: 38.2%; }
+    table.index tbody td.thirty_five {
+      width: 35%; }
+    table.index tbody td.third, table.index tbody td.one_third {
+      width: 33%; }
+    table.index tbody td.thirty {
+      width: 30%; }
+    table.index tbody td.quarter, table.index tbody td.one_quarter {
+      width: 25%; }
+    table.index tbody td.fifth, table.index tbody td.twenty {
+      width: 20%; }
+    table.index tbody td.fifteen {
+      width: 15%; }
+    table.index tbody td.ten {
+      width: 10%; }
     table.index tbody td a {
       padding: 2px 4px;
       color: white;
