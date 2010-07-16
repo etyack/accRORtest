@@ -8,7 +8,7 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 require "rubygems"
 require "bundler"
-Bundler.setup
+# Bundler.setup
 
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
