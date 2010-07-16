@@ -1,0 +1,39 @@
+@import mixins.sass
+
+table.index
+  :border-spacing 0
+  :margin 0
+  +sans-fonts
+  thead, tfoot
+    :width 100%
+    :margin 0
+    :text-align left
+    th, td
+      :padding 4px 8px
+      :font-size 1.1em
+      :color white
+      :font-weight bold
+      :background= !blue_four - #222
+  tbody
+    td
+      :padding 3px 6px
+      :font-size 1.2em
+      a
+        :padding 2px 4px
+        :color white
+        :font-weight bold
+        :text-decoration none
+        +sans-fonts
+        &.positive
+          +green_link
+        &.negative
+          +red_link
+    tr
+      &.odd
+        td
+          :background white
+      &.even
+        td
+          :background #e7effc
+          :border-bottom 1px solid #CBDEFB
+          :border-top 1px solid #CBDEFB

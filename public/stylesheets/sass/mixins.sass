@@ -1,0 +1,84 @@
+@import color_definitions.sass
+
+// Mixins
+=unlimited
+  padding: 0
+  margin: 0
+
+=cell-defaults
+  padding: 6px 12px
+  text-align: left
+
+=serif-fonts
+  font-family: Georgia, Serif, Palatino, Garamond
+
+=sans-fonts
+  font-family: Helvetica, Arial, Sans, "Trebuchet MS", Verdana
+
+=blue-border(!side)
+  @if !side == "top"
+    border-top = "1px solid #{!blue_one - #222}"
+  @else if !side == "bottom"
+    border-bottom = "1px solid #{!blue_one - #222}"
+  @else if !side == "both"
+    border-top = "1px solid #{!blue_one - #222}"
+    border-bottom = "1px solid #{!blue_one - #222}"
+
+=make-it-gray
+  :background #666
+  :border 1px solid #444
+  &:hover
+    :background #777
+    :border 1px solid #555
+
+=sizes
+  &.full, &.whole, &.hundred, &.one_hundred
+    :width 100%
+  &.ninety
+    :width 90%
+  &.eighty
+    :width 80%
+  &.three_quarters
+    :width 75%
+  &.seventy
+    :width 70%
+  &.two_thirds
+    :width 66%
+  &.golden_ratio_greater
+    :width 61.8%
+  &.sixty
+    :width 60%
+  &.half, &.one_half, &.fifty
+    :width 50%
+  &.forty
+    :width 40%
+  &.golden_ratio_lesser
+    :width 38.2%
+  &.thirty_five
+    :width 35%
+  &.third, &.one_third
+    :width 33%
+  &.thirty
+    :width 30%
+  &.quarter, &.one_quarter
+    :width 25%
+  &.fifth, &.twenty
+    :width 20%
+  &.fifteen
+    :width 15%
+  &.ten
+    :width 10%
+
+=green_link
+  :background= !green_seven
+  :border= "1px solid #{!green_seven - #222}"
+  &:hover
+    :background= !green_seven + #222
+    :border= "1px solid #{!green_seven}"
+
+=red_link
+  :background= !red_six
+  :border= "1px solid #{!red_six - #222}"
+  &:hover
+    :background= !red_six + #222
+    :border= "1px solid #{!red_six}"

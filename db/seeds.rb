@@ -5,3 +5,8 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+#
+require 'factory_girl'
+require 'faker'
+
+25.times { Factory :gadget }

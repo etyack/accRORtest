@@ -1,1 +1,19 @@
-%h2 it were worxx0rz
+= stylesheet_link_tag "gadgets"
+%h2 My Magnificent Gadgets
+%table.index
+  %thead
+    %tr
+      %th Name
+      %th Description
+      %th Weight
+  %tbody
+    - @gadgets.each do |g|
+      %tr{:class => cycle("odd", "even")}
+        %td= g.name
+        %td= g.description
+        %td= g.complete_weight
+  %tfoot
+    %tr
+      %th Name
+      %th Description
+      %th Weight

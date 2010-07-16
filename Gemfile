@@ -3,7 +3,8 @@ source :gemcutter
 
 # Define a bundler group for a default rails install
 gem "bundler"
-gem "factory_girl", ">=1.2.3"
+gem "factory_girl", ">=1.3.1"
+gem "faker", ">=0.3.1"
 gem "haml"
 gem "thin", ">=1.2.7"
 gem "mongrel", ">=1.1.5"
