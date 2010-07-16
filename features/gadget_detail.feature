@@ -5,12 +5,12 @@ Feature: Gadget Detail
 
   Background:
     Given I have a gadget called "The Atrocious Condor Waffler" that weighs 900 ounces
-    And I am on the gadget overview page
 
     Scenario: Psychotic engineer views gadget detail
-      When I click "The Atrocious Condor Waffler"
-      Then I should be on the gadget detail page for "The Atrocious Condor Waffler"
+      Given I am on the gadget overview page
+      When I follow "The Atrocious Condor Waffler"
+      Then I should be viewing the gadget detail page for "The Atrocious Condor Waffler"
     
     Scenario: User views gadget weight
-      Given I am on the gadget detail page for "The Atrocious Condor Waffler"
-      Then I should see that it weighs 900 ounces
+      Given I am viewing the gadget detail page for "The Atrocious Condor Waffler"
+      Then I should see that "The Atrocious Condor Waffler" weighs 900 ounces

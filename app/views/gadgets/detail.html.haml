@@ -1,0 +1,8 @@
+= stylesheet_link_tag "gadgets"
+%h2= @gadget.name
+%dl{:id => @gadget.verbose_id}
+  %dt Description
+  %dd= @gadget.description
+
+  %dt Weight
+  %dd= @gadget.complete_weight

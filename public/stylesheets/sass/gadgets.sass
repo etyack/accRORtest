@@ -1,4 +1,5 @@
 @import mixins.sass
+@import color_definitions.sass
 
 table.index
   :border-spacing 0
@@ -19,16 +20,6 @@ table.index
       +sizes
       :padding 3px 6px
       :font-size 1.2em
-      a
-        :padding 2px 4px
-        :color white
-        :font-weight bold
-        :text-decoration none
-        +sans-fonts
-        &.positive
-          +green_link
-        &.negative
-          +red_link
     tr
       &.odd
         td
@@ -38,3 +29,12 @@ table.index
           :background #e7effc
           :border-bottom 1px solid #CBDEFB
           :border-top 1px solid #CBDEFB
+
+dl
+  +sans-fonts
+  dt
+    :font-size 1.8em
+    :color= !blue_five
+  dd
+    :font-size 1.4em
+    :margin-bottom 12px

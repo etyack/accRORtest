@@ -10,3 +10,24 @@ h2 {
   width: 72%;
   margin: 20px 14%;
   min-width: 600px; }
+
+a {
+  padding: 2px 4px;
+  color: #30a027;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, Sans, "Trebuchet MS", Verdana; }
+  a:hover {
+    text-decoration: underline; }
+  a.positive {
+    background: #53732a;
+    border: 1px solid #315108; }
+    a.positive:hover {
+      background: #75954c;
+      border: 1px solid #53732a; }
+  a.negative {
+    background: #ab0a0a;
+    border: 1px solid #890000; }
+    a.negative:hover {
+      background: #cd2c2c;
+      border: 1px solid #ab0a0a; }

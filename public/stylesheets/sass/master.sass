@@ -12,3 +12,17 @@ h2
   :width 72%
   :margin 20px 14%
   :min-width 600px
+
+a
+  :padding 2px 4px
+  :color #30A027
+  :font-weight bold
+  :text-decoration none
+  +sans-fonts
+  &:hover
+    :text-decoration underline
+
+  &.positive
+    +green_link
+  &.negative
+    +red_link

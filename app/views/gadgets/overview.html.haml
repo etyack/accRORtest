@@ -8,8 +8,8 @@
       %th Weight
   %tbody
     - @gadgets.each do |g|
-      %tr{:class => cycle("odd", "even")}
-        %td.twenty= g.name
+      %tr{:class => cycle("odd", "even"), :id => g.verbose_id}
+        %td.twenty= link_to g.name, detail_gadget_path(g)
         %td.sixty= g.description
         %td.twenty= g.complete_weight
   %tfoot

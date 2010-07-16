@@ -12,6 +12,8 @@ module NavigationHelpers
       '/'
     when /the gadget overview/
       root_path
+    when /the detail page for that gadget/
+      detail_gadget_path(@gadget)
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

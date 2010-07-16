@@ -51,27 +51,18 @@ table.index {
       width: 15%; }
     table.index tbody td.ten {
       width: 10%; }
-    table.index tbody td a {
-      padding: 2px 4px;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      font-family: Helvetica, Arial, Sans, "Trebuchet MS", Verdana; }
-      table.index tbody td a.positive {
-        background: #53732a;
-        border: 1px solid #315108; }
-        table.index tbody td a.positive:hover {
-          background: #75954c;
-          border: 1px solid #53732a; }
-      table.index tbody td a.negative {
-        background: #ab0a0a;
-        border: 1px solid #890000; }
-        table.index tbody td a.negative:hover {
-          background: #cd2c2c;
-          border: 1px solid #ab0a0a; }
   table.index tbody tr.odd td {
     background: white; }
   table.index tbody tr.even td {
     background: #e7effc;
     border-bottom: 1px solid #cbdefb;
     border-top: 1px solid #cbdefb; }
+
+dl {
+  font-family: Helvetica, Arial, Sans, "Trebuchet MS", Verdana; }
+  dl dt {
+    font-size: 1.8em;
+    color: #1755a4; }
+  dl dd {
+    font-size: 1.4em;
+    margin-bottom: 12px; }
