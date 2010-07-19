@@ -39,6 +39,6 @@ Feature: Gadget Detail
       Given "The Atrocious Condor Waffler" has a part called "ultrascrew"
       And I am viewing the gadget detail page for "The Atrocious Condor Waffler"
       When I delete the "ultrascrew" part from "The Atrocious Condor Waffler"
-      Then I should see a notice saying that the part was successfully added
+      Then I should see a notice saying that the part was successfully deleted
       And I should be viewing the gadget detail page for "The Atrocious Condor Waffler"
       And I should not see "megawidget" within the parts for "The Atrovious Condor Waffler"
