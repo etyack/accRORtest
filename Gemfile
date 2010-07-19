@@ -21,6 +21,7 @@ group :test do
   gem "cucumber-rails", ">=0.3.0"
   gem "gherkin", ">=2.1.4"
   gem "database_cleaner", ">=0.5.2"
+  gem "launchy"
   gem "rspec", ">=1.2.9"
   gem "rspec-rails", ">=1.2.9"
   gem "shoulda", ">=2.10.3"
