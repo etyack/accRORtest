@@ -10,3 +10,9 @@ Feature: Gadget Overview
   Scenario: Psychotic Engineer Views His Gadgets
     Given I go to the gadget overview
     Then I should see all of the gadgets that I've created
+
+  @wip @parts
+  Scenario: Psychotic Engineer Views Parts Within Each Gadget
+    Given the gadget called "The Magnificent Whale Catcher" has 7 parts
+    When I go to the gadget overview
+    Then I should see that "The Magnificent Whale Catcher" has 7 parts
